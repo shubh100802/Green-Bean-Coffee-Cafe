@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Bean Coffee Cafe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background: #2c3e50;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    header nav ul {
+        list-style: none;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+        border-radius: 5px;
+        color: #e67e22;
+        background: white;
+    }
+
+    .hero {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('coffee.jpg') no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        animation: fadeInDown 1s forwards;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        animation: fadeInUp 1s forwards;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    section#about,
+    section#menu,
+    section#contact {
+        background: #ecf0f1;
+        margin: 2rem 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section#about h2,
+    section#menu h2,
+    section#contact h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #2c3e50;
+    }
+
+    section#about p,
+    section#menu p,
+    section#contact p {
+        font-size: 1.2rem;
+        color: #34495e;
+    }
+
+    .about-content,
+    .menu-content,
+    .contact-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .about-text,
+    .menu-text,
+    .contact-text {
+        flex: 1;
+        min-width: 300px;
+        max-width: 600px;
+        color: #34495e;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .about-image,
+    .menu-image,
+    .contact-image {
+        flex: 1;
+        min-width: 300px;
+        max-width: 600px;
+    }
+
+    .about-image img,
+    .menu-image img,
+    .contact-image img {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background: #2c3e50;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 1rem;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">Green Bean Coffee Cafe</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to Green Bean Coffee Cafe</h1>
+        <p>Where every cup is brewed with love</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to Green Bean Coffee Cafe! We are passionate about providing you with the best coffee experience possible. Our journey started with a simple idea: to create a space where coffee lovers can come together and enjoy the perfect cup of coffee.</p>
+                <p>Our beans are sourced from the finest coffee farms around the world, and we roast them to perfection to bring out their unique flavors. Whether you prefer a classic espresso, a rich latte, or a refreshing cold brew, we have something for everyone.</p>
+                <p>At Green Bean Coffee Cafe, we believe that coffee is more than just a beverage. It's a way to connect, relax, and enjoy life's simple pleasures. Our cozy atmosphere and friendly staff make it the perfect place to catch up with friends, work on your latest project, or simply unwind with a good book.</p>
+                <p>We are committed to sustainability and ethical sourcing practices. Our goal is to create a positive impact on the environment and the communities where our coffee is grown. Thank you for being a part of our journey, and we look forward to serving you the best coffee you've ever had!</p>
+            </div>
+            <div class="about-image">
+                <img src="about_us.jpg" alt="About Green Bean Coffee Cafe">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-content">
+            <div class="menu-text">
+                <p>Explore our wide range of coffee and snacks. From the classic espresso to innovative brews, we offer a diverse menu to cater to every taste.</p>
+                <ul>
+                    <li><strong>Espresso</strong> - Rich and bold</li>
+                    <li><strong>Latte</strong> - Smooth and creamy</li>
+                    <li><strong>Cappuccino</strong> - Perfect balance of espresso and frothy milk</li>
+                    <li><strong>Cold Brew</strong> - Refreshingly cool and full of flavor</li>
+                    <li><strong>Pastries</strong> - Freshly baked and perfect with your coffee</li>
+                </ul>
+            </div>
+            <div class="menu-image">
+                <img src="menu.jpg" alt="Our Menu">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>We would love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to get in touch with us.</p>
+                <p><strong>Address:</strong> VIT-Bhopal , Lasudiya Khas</p>
+                <p><strong>Phone:</strong> 9995674321</p>
+                <p><strong>Email:</strong> contact@greenbeancafe.com</p>
+            </div>
+            <div class="contact-image">
+                <img src="contact.jpg" alt="Contact Us">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Green Bean Coffee Cafe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroText = document.querySelector('.hero h1');
+            const heroSubText = document.querySelector('.hero p');
+
+            // Initial animations
+            heroText.style.animation = 'fadeInDown 1s forwards';
+            heroSubText.style.animation = 'fadeInUp 1s forwards';
+
+            // Adding a scroll-triggered fade-in effect
+            window.addEventListener('scroll', () => {
+                const offsetY = window.scrollY;
+
+                if (offsetY > 50) {
+                    heroText.style.animation = 'fadeInDown 1s forwards';
+                    heroSubText.style.animation = 'fadeInUp 1s forwards';
+                } else {
+                    heroText.style.animation = 'none';
+                    heroSubText.style.animation = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
